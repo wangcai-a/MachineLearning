@@ -10,7 +10,7 @@ class Perceptron(object):
     eta: float
         学习率(0到1之间)
     n_iter: int
-        遍历数据集
+        迭代次数
 
     Attributs
     ----------
@@ -49,7 +49,7 @@ class Perceptron(object):
 
     def net_input(self, x):
         '''
-        预测下次输入
+        计算净输入
         :param x:
         :return:
             两个矩阵的内积
