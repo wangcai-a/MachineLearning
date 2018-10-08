@@ -5,7 +5,7 @@ class AdalineGD(object):
     '''
     自适应神经元分类器
 
-    Paramenter
+    Paramenter(超参)
     -----------
     eta: float
         学习率(0到1之间)
