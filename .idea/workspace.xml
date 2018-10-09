@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aed69586-18c5-4c76-8351-817897a4512e" name="Default" comment="" />
+    <list default="true" id="aed69586-18c5-4c76-8351-817897a4512e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/sigmoid.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/sigmoid.ipynb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
