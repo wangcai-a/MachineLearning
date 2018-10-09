@@ -41,7 +41,7 @@ class AdalineGD(object):
         for _ in range(self.n_iter):
             output = self.net_input(x)
             errors = (y - output)   # 真实样本和预测值的误差
-            self.w_[1:] += self.eta * x.T.dot(errors)
+            self.w_[1:] += self.eta * x.T.dot(errors)   # x.T.dot(y)等于np.dot(x.T, y)
             self.w_[0:] += self.eta * errors.sum()
             cost = (errors ** 2).sum() / 2.0    # 损失函数
             self.cost_.append(cost)
@@ -54,7 +54,6 @@ class AdalineGD(object):
         :param x:
         :return:
             两个矩阵的内积
-            注:x.T.dot(y)等于np.dot(x.T, y)
         '''
         return np.dot(x, self.w_[1:]) + self.w_[0]
 
@@ -74,4 +73,4 @@ class AdalineGD(object):
             大于等于0输出1,
             否则输出-1
         '''
-        return np.where(self.net_input(x) >= 0.0, 1, -1)
+        return np.where(self.activation(x) >= 0.0, 1, -1)
