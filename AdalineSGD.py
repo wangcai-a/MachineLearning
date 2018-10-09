@@ -25,13 +25,13 @@ class AdalineSGD(object):
         随机数种子
         设置随机数种子进行重排,并初始化权重
     '''
-    def __init__(self, eta=0.01, n_iter=10, shuffle=True, random_satte=None):
+    def __init__(self, eta=0.01, n_iter=10, shuffle=True, random_state=None):
         self.eta = eta
         self.n_iter = n_iter
         self.w_initialized = False
         self.shuffle = shuffle
-        if random_satte:
-            seed(random_satte)  # 使用随机数种子后,每次随机出的数相同
+        if random_state:
+            seed(random_state)  # 使用随机数种子后,每次随机出的数相同
 
     def fit(self, x, y):
         '''
@@ -60,7 +60,7 @@ class AdalineSGD(object):
 
     def partial_fit(self, x, y):
         '''
-        训练部分数据
+        训练部分数据(用于在线环境更新模型参数)
         :param x:
         :param y:
         :return:
