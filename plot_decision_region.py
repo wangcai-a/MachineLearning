@@ -2,9 +2,10 @@ from matplotlib.colors import ListedColormap
 import numpy as np
 import matplotlib.pyplot as plt
 
-def plot_decision_region(x, y, classifier, resolution=0.02):
+
+def plot_decision_region(x, y, classifier, test_idx=None, resolution=0.02):
     # 设置标志和色彩
-    marker = ('s', 'x', 'o', '^', 'v')
+    markers = ('s', 'x', 'o', '^', 'v')
     colors = ('red', 'blue', 'lightgreen', 'gray', 'cyan')
     cmap = ListedColormap(colors[:len(np.unique(y))])
 
@@ -23,7 +24,15 @@ def plot_decision_region(x, y, classifier, resolution=0.02):
     plt.ylim(xx2.min(), xx2.max())
 
     # 绘制数据点
-    for idx, cl in enumerate(np.unique(y)):
-        plt.scatter(x=x[y == cl, 0], y=x[y == cl, 1],
+    x_test, y_test = x[test_idx, :], y[test_idx]
+    for idx, c1 in enumerate(np.unique(y)):
+        plt.scatter(x=x[y == c1, 0], y=x[y == c1, 1],
                     alpha=0.8, c=cmap(idx),
-                    marker=marker[idx], label=cl)
+                    marker=markers[idx], label=c1)
+
+    # 高亮测试数据
+    if test_idx:
+        x_test, y_test = x[test_idx, :], y[test_idx]
+        plt.scatter(x_test[:, 0], x_test[:, 1], c='',
+                    alpha=1, linewidths=1, marker='o',
+                    s=55, label='test set')
