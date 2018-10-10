@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aed69586-18c5-4c76-8351-817897a4512e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/sigmoid.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/sigmoid.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/LogisticRegression-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/LogisticRegression-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogisticRegression.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/LogisticRegression.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -183,9 +184,9 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32935324" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.27363184" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="7" visible="true" weight="0.27363184" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.23582089" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.23582089" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
