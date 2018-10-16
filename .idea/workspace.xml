@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aed69586-18c5-4c76-8351-817897a4512e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wine.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/wine.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PCA.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PCA.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
